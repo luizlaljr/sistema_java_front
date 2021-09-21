@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import { Flex, Box, VStack, Heading, Text, Button } from '@chakra-ui/react'
 
 export default function Home() {
@@ -17,7 +18,9 @@ export default function Home() {
               <Text>Professor: Viterbo</Text>
               <Text>Aluno: Luiz Alberto Junior</Text>
             </Flex>
-            <Button colorScheme="blue">Começar</Button>
+            <Link href="volumes">
+              <Button colorScheme="blue">Começar</Button>
+            </Link>
           </VStack>
         </Flex>
       </Box>
